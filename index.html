@@ -53,16 +53,17 @@
 		<script id="tools" type="text/html">
 		{{#rows}}
 		<div id="{{rowNumber}}" class="tool-box {{#checkedout}}not-{{/checkedout}}available">
-			<span class="tool-box-tool">{{tool}}</span>
+			<span class="tool-box-tool">{{物件}}</span>
 			<div class="tool-box-bottom {{rowNumber}}">
-				{{#checkedout}} <span class="tool-box-borrowed">ON LOAN</span>{{/checkedout}}
-				{{^checkedout}}<a href="mailto:{{owneremail}}?subject=Tool Lending: {{tool}}"><span class="tool-box-borrow btn">BORROW</span></a>{{/checkedout}}
+				{{#checkedout}} <span class="tool-box-borrowed">已借出</span>{{/checkedout}}
+				{{^checkedout}}<a href="http://wa.me/852{{物件}}/?text=Tool Lending: {{物件}}"><span class="tool-box-borrow btn">借用</span></a>{{/checkedout}}
 				<ul>
-					<li><small>WHO / WHERE : </small></li>
+					<li><small>所屬單位 / 聯絡人 : </small></li>
 					<li>{{owner}}</li>
+					<li><small>位置 : </small></li>
 					<li>{{位置}}</li>
 					{{#tooldetails}}
-					<li><small>NOTES : </small>{{tooldetails}}</li>
+					<li><small>描述 : </small>{{物件描述}}</li>
 					{{/tooldetails}}
 				</ul>
 			</div>
