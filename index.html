@@ -20,7 +20,7 @@
 		</header>
 		<div id="filters" class="container">
 			<input id="toolSearch" type="search" placeholder="鎚子.."></input>
-			<span class="clear sml-button">Clear</span>
+			<span class="clear sml-button">清除籂選</span>
 			<span id="showAvailable" class="sml-button">顯示可借用</span>
 		</div>
 		<div id="tools" class="container"><span class="flash animated">載入中...</span></div>
@@ -55,7 +55,7 @@
 			<span class="tool-box-tool">{{物件}}</span>
 			<div class="tool-box-bottom {{rowNumber}}">
 				{{#checkedout}} <a href="http://tkbc.org.hk"><span class="tool-box-borrowed">已借出</span></a>{{/checkedout}}
-				{{^checkedout}}<a href="http://wa.me/852{{Whatsapp號碼}}/?text=Tool Lending: {{物件}}"><span class="tool-box-borrow btn">借用</span></a>{{/checkedout}}
+				{{^checkedout}}<a href="https://api.whatsapp.com/send?phone=852{{Whatsapp號碼}}&text=你好，我想借倉入面的{{物件}}"><span class="tool-box-borrow btn">借用</span></a>{{/checkedout}}
 				<ul>
 					<li><small>所屬單位 / 聯絡人 : </small></li>
 					<li>{{聯絡人}}</li>
