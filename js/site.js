@@ -55,9 +55,9 @@ function toggleAvailable(state) {
 
     // Update the button text
     if (button.hasClass('button-pressed')) {
-        button.html("Show All")
+        button.html("顯示全部")
     } else {
-        button.html("Show Available")
+        button.html("只顯示可借用")
     }
 }
 
