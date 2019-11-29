@@ -54,7 +54,7 @@
 		<div id="{{rowNumber}}" class="tool-box {{#checkedout}}not-{{/checkedout}}available">
 			<span class="tool-box-tool">{{物件}}</span>
 			<div class="tool-box-bottom {{rowNumber}}">
-				{{#checkedout}} <a href="{{Form Response Edit URL}}">已借出</span></a>{{/checkedout}}
+				{{#checkedout}} <a href="{{FormResponseEditURL}}">已借出</span></a>{{/checkedout}}
 				{{^checkedout}}<a href="https://api.whatsapp.com/send?phone=852{{手提號碼}}&text=你好，我想借倉入面的{{物件}}"><span class="tool-box-borrow btn">借用</span></a>{{/checkedout}}
 				<ul>
 					<li><small>所屬單位 / 聯絡人 : </small></li>
